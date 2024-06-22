@@ -246,7 +246,7 @@ You can download and install JSON-C using the [vcpkg](https://github.com/Microso
 
 The JSON-C port in vcpkg is kept up to date by Microsoft team members and community contributors. If the version is out of date, please [create an issue or pull request](https://github.com/Microsoft/vcpkg) on the vcpkg repository.
 
-<a name="android">
+<a name="android"></a>
 Building for Android
 ----------------------
 
@@ -271,7 +271,7 @@ cmake \
 make install
 ```
 
-<a name="amiga">
+<a name="amiga"></a>
 Building for Commodore Amiga
 ----------------------
 
@@ -279,7 +279,7 @@ Building for Commodore Amiga is supported for both Motorola 68k (AmigaOS 3) and 
 
 Install Docker on your machine if you don't already have it. You can download Docker Desktop for Windows/macOS/Linux [here](https://www.docker.com/products/docker-desktop/).
 
-To build for Motorola 68k Amiga:
+### To build for Motorola 68k Amiga:
 
 ```
 mkdir json-c-build
@@ -296,7 +296,7 @@ libjson-c.a will get created in the json-c-build directory.
 
 You can change newlib to nix20, nix13 or clib2 if you would like to build the library suited for libnix or clib2 instead. Newlib is default.
 
-To build for PowerPC Amiga:
+### To build for PowerPC Amiga:
 
 ```
 mkdir json-c-build
@@ -312,8 +312,8 @@ make
 libjson-c.a will get created in the json-c-build directory.
 
 
-<a name="linking">
-Linking to `libjson-c`</a>
+<a name="linking"></a>
+Linking to `libjson-c`
 ----------------------
 
 If your system has `pkgconfig`,
@@ -350,7 +350,7 @@ cd build
 cmake -DCMAKE_PREFIX_PATH=/path/to/json_c/install/lib64/cmake ..
 ```
 
-<a name="using">
+<a name="using"></a>
 Using json-c
 ------------
 
